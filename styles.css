@@ -55,6 +55,7 @@ ul {
 
 ul li {
     margin: 10px 0;
+    cursor: pointer;
 }
 
 ul li a {
@@ -66,6 +67,10 @@ ul li a {
     border-radius: 10px;
     transition: all 0.3s ease;
     position: relative;
+}
+
+ul li:not(.active):hover a {
+    background: #f0f0f0;
 }
 
 ul li a i {
@@ -90,6 +95,7 @@ ul li.active a::before {
     background: transparent;
     border-bottom-right-radius: 20px;
     box-shadow: 5px 5px 0 5px #1e1e1e;
+    transition: all 0.3s ease;
 }
 
 ul li.active a::after {
@@ -102,6 +108,7 @@ ul li.active a::after {
     background: transparent;
     border-top-right-radius: 20px;
     box-shadow: 5px -5px 0 5px #1e1e1e;
+    transition: all 0.3s ease;
 }
 
 .user {
@@ -129,4 +136,17 @@ ul li.active a::after {
 .logout a i {
     font-size: 20px;
     margin-right: 20px;
+}
+
+.view {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

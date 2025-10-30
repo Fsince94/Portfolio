@@ -14,37 +14,37 @@
             <span>WEBSITE LOGO</span>
         </div>
         <ul>
-            <li>
+            <li data-view="home">
                 <a href="#">
                     <i class="fas fa-home"></i>
                     <span>HOME</span>
                 </a>
             </li>
-            <li class="active">
+            <li class="active" data-view="profile">
                 <a href="#">
                     <i class="fas fa-user"></i>
                     <span>PROFILE</span>
                 </a>
             </li>
-            <li>
+            <li data-view="inbox">
                 <a href="#">
                     <i class="fas fa-inbox"></i>
                     <span>INBOX</span>
                 </a>
             </li>
-            <li>
+            <li data-view="analytics">
                 <a href="#">
                     <i class="fas fa-chart-line"></i>
                     <span>ANALYTICS</span>
                 </a>
             </li>
-            <li>
+            <li data-view="order">
                 <a href="#">
                     <i class="fas fa-shopping-cart"></i>
                     <span>ORDER</span>
                 </a>
             </li>
-            <li>
+            <li data-view="settings">
                 <a href="#">
                     <i class="fas fa-cog"></i>
                     <span>SETTINGS</span>
@@ -63,7 +63,25 @@
         </div>
     </nav>
     <main class="main-content">
-        <!-- Content goes here -->
+        <div id="home" class="view" style="display: none;">
+            <h1>Home</h1>
+        </div>
+        <div id="profile" class="view">
+            <h1>Profile</h1>
+        </div>
+        <div id="inbox" class="view" style="display: none;">
+            <h1>Inbox</h1>
+        </div>
+        <div id="analytics" class="view" style="display: none;">
+            <h1>Analytics</h1>
+        </div>
+        <div id="order" class="view" style="display: none;">
+            <h1>Order</h1>
+        </div>
+        <div id="settings" class="view" style="display: none;">
+            <h1>Settings</h1>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
